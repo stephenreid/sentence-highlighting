@@ -66,6 +66,19 @@
 	    window.scrollTo( 0, top );
 	}
     });
+	
+
+    var shifts=0;
+    $(document).keyup(function(event){
+    	if(event.which == 16){shifts++;}
+    	if(event.which != 16){shifts=0;}
+    	if(shifts == 2){
+    		$(document).mousedown(function(event){(
+    				//use event.target.?? Returns an html element
+    				//then locate which paragraph and which text this is in.
+    		});
+    		shifts=0;}
+    });
 
     
 })(jQuery,document);
